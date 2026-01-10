@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+
+nav {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #38bdf8;
+  font-size: 1.4rem;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+input[type="button"] {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background: #0ea5e9;
+}
+
+
+ul {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.calculator {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.screen {
+  background: #020617;
+  color: #38bdf8;
+  font-size: 2.4rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: #e5e7eb;
+  background: #334155;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #475569;
+}
+
+
+.operator {
+  background: #38bdf8;
+  color: #020617;
+}
+.operator:hover {
+  background: #0ea5e9;
+}
+
+.equal {
+  background: #22c55e;
+  color: #020617;
+  grid-column: span 1;
+}
+
+.equal:hover {
+  background: #16a34a;
+}
+
+.clear {
+  background: #ef4444;
+  color: #fff;
+}
+
+.clear:hover {
+  background: #dc2626;
+}
+
+.delete {
+  background: #f59e0b;
+  color: #020617;
+}
+.delete:hover {
+  background: #d97706;
+}
+
+.wide {
+  grid-column: span 2;
+}

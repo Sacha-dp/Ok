@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Convertisseur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Plutot conversion ou calculatrice?</h1>
+  <div>
+    <a href="index.html">Convertisseur</a>
+    <a href="calculatrice.html">Calculatrice</a>
+    <a href="info.html">Infos</a>
+    <a href="nous.html">Tout savoir sur nous</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Convertisseur de nombres</h2>
+  <p><strong>Attention :</strong> remplir une seule case à la fois.</p>
+
+  <form>
+    <div>
+      <label>Décimal</label>
+      <input type="text" id="decimal">
+    </div>
+
+    <div>
+      <label>Binaire</label>
+      <input type="text" id="binaire">
+    </div>
+
+    <div>
+      <label>Hexadécimal</label>
+      <input type="text" id="hexadecimal">
+    </div>
+
+    <input type="button" value="Convertir" onclick="conversion()">
+    <input type="button" value="Effacer" onclick="effacer()">
+
+  </form>
+</div>
+
+<script src="convertisseur.js"></script>
+</body>
+</html>
